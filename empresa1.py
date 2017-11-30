@@ -25,7 +25,14 @@ def accesoCasosTexttest(matrizCasosTest, rutaAccesoFichero):
                 casosTestDia.append(item)
         fichero.close()
         return matrizCasosTest
-
+"""def accesoCasosTexttest primero comprueba  si el archivo existe y si el nombre es un str , 
+lee linea a linea el archivo y comprueba primero la linea dia, si es una nueva linea dia crea
+una lista para meter todos los items y su estado en ese dia, comprueba si se ha acabado el día 
+(\n) para agregar la lista del dia a la matriz de casos test aue engloba todos los dias,
+se analiza la linea encabezada por name para ver el numero de atributos y dividir las otras lineas 
+en esa misma cantidad de atributos (3, numeroPropiedadesItem);
+Al final crea listas por cada linea de 3 elementos : como si fuera una tabla (Name, SellIn, Quality) y
+añade estas a otra listea quedando una matriz con los datos de cada día."""
 
 def crearFicheroCasosTest(ficheroVolcadoCasosTest, matrizCasosTest):
 
@@ -53,7 +60,7 @@ def mostrarCasosTest(matrizCasosTest):
 
 if __name__ == "__main__":
 
-    rutaAccesoFichero = "./stdout.gr"
+    rutaAccesoFichero = "/home/ulises/Micarpeta/proyectos/tienda/casos_tets.txt"
     # rutaAccesoFichero = "stdout_bug_conjured.gr"
 
     matrizCasosTest = []
