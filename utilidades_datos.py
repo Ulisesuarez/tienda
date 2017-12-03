@@ -1,4 +1,40 @@
-"""def deStringADatos(matrizCasosTest):"""
+import ast
+def convertirDeStringADatos(matrizCasosTest):
+    assert matrizCasosTest is not None
+    assert isinstance(matrizCasosTest,list)
+    assert matrizCasosTest!=[]
+    for matrizDiaIndice in range(len(matrizCasosTest)):
+        for listaItemIndice in range(len(matrizCasosTest[matrizDiaIndice])):
+            for atributoIndice in range(len(matrizCasosTest[matrizDiaIndice][listaItemIndice])):
+                try:
+                    matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice]= ast.literal_eval(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice].strip())
+                except (SyntaxError,NameError):
+                    pass
+                if atributoIndice==0:
+                    assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],str)
+                else:
+                    assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int)
+                            
+
+
+def covertirDeDatosAString(matrizCasosTest):
+    assert matrizCasosTest is not None
+    assert isinstance(matrizCasosTest,list)
+    assert matrizCasosTest!=[]
+    for matrizDiaIndice in range(len(matrizCasosTest)):
+        for listaItemIndice in range(len(matrizCasosTest[matrizDiaIndice])):
+            for atributoIndice in range(len(matrizCasosTest[matrizDiaIndice][listaItemIndice])):
+                
+                if not isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],str):
+                    try:
+                        matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice]= str(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice])
+                    except SyntaxError:
+                        pass
+                assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],str)
+
+
+
+"""def deStringADatos(matrizCasosTest):
     for matrizDia in range(len(matrizCasosTest)):
         for listaItem in range(len(matrizCasosTest[matrizDia])):
             for atributo in range(len(matrizCasosTest[matrizDia][listaItem])):
@@ -34,27 +70,7 @@
                 elif matrizCasosTest[matrizDia][listaItem][atributo]=="False" or matrizCasosTest[matrizDia][listaItem][atributo]=="false" or matrizCasosTest[matrizDia][listaItem][atributo]=="FALSE":
                         matrizCasosTest[matrizDia][listaItem][atributo]=False
 
- "   
+ """
                 
-def deStringADatos2(matrizCasosTest):
-    for matrizDia in range(len(matrizCasosTest)):
-        for listaItem in range(len(matrizCasosTest[matrizDia])):
-            for atributo in range(len(matrizCasosTest[matrizDia][listaItem])):
-                try:
-                    matrizCasosTest[matrizDia][listaItem][atributo]= eval(matrizCasosTest[matrizDia][listaItem][atributo])
-                except (SyntaxError,NameError):
-                    pass
-
-def deDatosASTring(matrizCasosTest):
-    for matrizDia in range(len(matrizCasosTest)):
-        for listaItem in range(len(matrizCasosTest[matrizDia])):
-            for atributo in range(len(matrizCasosTest[matrizDia][listaItem])):
-                
-                if not isinstance(matrizCasosTest[matrizDia][listaItem][atributo],str):
-                    try:
-                        matrizCasosTest[matrizDia][listaItem][atributo]= str(matrizCasosTest[matrizDia][listaItem][atributo])
-                    except SyntaxError:
-                        pass
-        
         
     
