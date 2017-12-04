@@ -1,0 +1,60 @@
+INFO:root:En día y hora:Sun Dec  3 22:31:10 2017
+INFO:root: Función accesoCasosTestTxt rutaAccesoFichero = 3 tipo de dato (rutaAccesoFichero)<class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora:Sun Dec  3 22:31:10 2017
+INFO:root: Función accesoCasosTestTxt rutaAccesoFichero = 289
+ERROR:root:Fichero no encontrado 
+
+INFO:root:En día y hora:Sun Dec  3 22:31:10 2017
+INFO:root: Función crearFicheroCasosTest ficheroVolcadoCasosTest = [] tipo de dato (ficheroVolcadoCasosTest)<class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:34:33 2017
+INFO:root:Función accesoCasosTestTxt| rutaAccesoFichero = 3| tipo de dato (rutaAccesoFichero)<class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:34:33 2017
+INFO:root:Función accesoCasosTestTxt| rutaAccesoFichero = 289
+ERROR:root:Fichero no encontrado 
+
+INFO:root:En día y hora: Sun Dec  3 22:34:33 2017
+INFO:root:Función crearFicheroCasosTest| ficheroVolcadoCasosTest = []| tipo de dato (ficheroVolcadoCasosTest)<class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:36:10 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 3 || tipo de dato (rutaAccesoFichero)<class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:36:10 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 289
+ERROR:root:Fichero no encontrado 
+
+INFO:root:En día y hora: Sun Dec  3 22:36:10 2017
+INFO:root:Función crearFicheroCasosTest || ficheroVolcadoCasosTest = [] || tipo de dato (ficheroVolcadoCasosTest)<class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:37:59 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 3 || tipo de dato rutaAccesoFichero = <class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:37:59 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 289
+ERROR:root:Fichero no encontrado 
+
+INFO:root:En día y hora: Sun Dec  3 22:37:59 2017
+INFO:root:Función crearFicheroCasosTest || ficheroVolcadoCasosTest = [] || tipo de dato ficheroVolcadoCasosTest = <class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:42:00 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 3 || tipo de dato rutaAccesoFichero = <class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora: Sun Dec  3 22:42:00 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 289
+ERROR:root:[1mFichero no encontrado+[0m
+
+INFO:root:En día y hora: Sun Dec  3 22:42:00 2017
+INFO:root:Función crearFicheroCasosTest || ficheroVolcadoCasosTest = [] || tipo de dato ficheroVolcadoCasosTest = <class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+

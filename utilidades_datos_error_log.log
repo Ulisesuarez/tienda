@@ -1,0 +1,69 @@
+INFO:root:En día y hora: Mon Dec  4 02:46:14 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int)
+INFO:root:En día y hora: Mon Dec  4 02:46:14 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int)
+INFO:root:En día y hora: Mon Dec  4 02:46:14 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int)
+INFO:root:En día y hora: Mon Dec  4 02:53:50 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],str)
+INFO:root:En día y hora: Mon Dec  4 02:53:50 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int)
+INFO:root:En día y hora: Mon Dec  4 02:53:50 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 3 || tipo de dato rutaAccesoFichero = <class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora: Mon Dec  4 02:53:50 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 289
+ERROR:root: Fichero no encontrado 
+
+INFO:root:En día y hora: Mon Dec  4 02:53:50 2017
+INFO:root:Función crearFicheroCasosTest
+ERROR:root:assert len(matrizCasosTest[0])>0 
+
+INFO:root:En día y hora: Mon Dec  4 02:53:50 2017
+INFO:root:Función crearFicheroCasosTest || ficheroVolcadoCasosTest = [] || tipo de dato ficheroVolcadoCasosTest = <class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+
+INFO:root:En día y hora: Mon Dec  4 02:57:31 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],str) 
+
+INFO:root:En día y hora: Mon Dec  4 02:57:31 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int) 
+
+INFO:root:En día y hora: Mon Dec  4 02:58:58 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],str) 
+
+INFO:root:En día y hora: Mon Dec  4 02:58:58 2017
+INFO:root:Función convertirStringADatos
+ERROR:root:assert isinstance(matrizCasosTest[matrizDiaIndice][listaItemIndice][atributoIndice],int) 
+
+INFO:root:utilidades_datos
+
+
+INFO:root:__main__
+
+
+INFO:root:En día y hora: Mon Dec  4 18:17:42 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 87 || tipo de dato rutaAccesoFichero = <class 'int'>
+ERROR:root:El nombre del fichero ha de ser un string 
+
+INFO:root:En día y hora: Mon Dec  4 18:17:42 2017
+INFO:root:Función accesoCasosTestTxt || rutaAccesoFichero = 289
+ERROR:root: Fichero no encontrado 
+
+INFO:root:En día y hora: Mon Dec  4 18:17:42 2017
+INFO:root:Función crearFicheroCasosTest ||  matrizCasosTest = []
+ERROR:root:assert len(matrizCasosTest[0])>0 
+
+INFO:root:En día y hora: Mon Dec  4 18:17:42 2017
+INFO:root:Función crearFicheroCasosTest || ficheroVolcadoCasosTest = [] || tipo de dato ficheroVolcadoCasosTest = <class 'list'>
+ERROR:root:La ruta de acceso al fichero ha de ser un string 
+
