@@ -21,12 +21,15 @@ import logging
 import os
 import time
 import utilidades_datos
-def accesoCasosTestTxt(matrizCasosTest, rutaAccesoFichero):
+def accesoCasosTestTxt(matrizCasosTest, rutaAccesoFichero, inicioListaFlag=None, finListaFlag=None,numeroPropiedadesFlag=None):
     """ Toma datos de un fichero y los vuelca en memoria
     
     Args:
         matrizCasosTest: Lista vacía donde se almacenarán los datos
         rutaAccesoFichero: Path del fichero fuente de los datos
+        inicioListaFlag: string utilizada para detectar el inicio de las listas anidadas 'casosTestDia'
+        finListaFlag: string utilizada para detectar el final de las listas anidadas 'casosTestDia'
+        numeroPropiedadesFlag: string utilizada para detectar el numero de propiedades de cada 'item'
 
     Returns:
         matrizCasosTest: Lista contenedora de los datos que hay en el fichero
@@ -40,11 +43,11 @@ def accesoCasosTestTxt(matrizCasosTest, rutaAccesoFichero):
             Si existe 'rutaAccesoFicheros', abrir 'fichero'
             Si alguna de estas acciones no dá el resultado esperado se registra el error en un log
         Se lee el fichero linea por linea (siguiendo el formato del fichero usado hasta el momento ('casos_tets.txt')):
-            La línea que contiene 'day' indica el principio de una lista anidadad, 'casosTestDia'
-            Usamos la línea encabezada por 'name' para obtener el numero de propiedades de cada item 
+            La línea que contiene 'inicioListaFlag' indica el principio de una lista anidadad, 'casosTestDia'
+            Usamos la línea encabezada por 'numeroAtributosFlag' para obtener el numero de propiedades de cada item 
             Transformamos la linea en una lista  con len='numeroPropiedadesItem'
             Añadimos la lista 'item' a la lista 'casosTestDia'
-            La línea ='\n' indica el final de 'casosTestDia', añadimos la lista a 'matrizCasosTest'
+            La línea == finListaFlag: indica el final de 'casosTestDia', añadimos la lista a 'matrizCasosTest'
             y si la hay pasamos a la siguiente lista 'casosTestDia'
         Una vez recorrido el fichero transformamos los tipos de cada propiedad invocando 
         'convertirStringADatos' del modulo 'utilidades_datos'
@@ -80,14 +83,20 @@ def accesoCasosTestTxt(matrizCasosTest, rutaAccesoFichero):
         #print("El nombre del fichero ha de ser un string")
         return []
     else:
+        if inicioListaFlag is None:
+            inicioListaFlag="day"
+        if finListaFlag is None:
+            finListaFlag="\n"
+        if numeroPropiedadesFlag is None:
+            numeroPropiedadesFlag="name"
         matrizCasosTest = []
         numeroPropiedadesItem = 0
         for linea in fichero:
-            if linea.find("day") != -1:
+            if linea.find(inicioListaFlag) != -1:
                 casosTestDia = []
-            elif linea == "\n":
+            elif linea == finListaFlag :
                 matrizCasosTest.append(casosTestDia)
-            elif linea.find("name") != -1:
+            elif linea.find(numeroPropiedadesFlag) != -1:
                 numeroPropiedadesItem = len(linea.split(','))
             else:
                 item = linea.rstrip().rsplit(',', maxsplit=numeroPropiedadesItem - 1)
