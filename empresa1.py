@@ -1,3 +1,22 @@
+"""
+Este modulo pertenece a la capa de acceso a datos del programa gestionador
+de stock de la tienda de Ollivander.
+
+
+Funciones:
+    -Obtener los datos de stock de un fichero en memoria
+    almacenandolos en la variable 'matrizCasosTest' -> accesoCasosTestTxt(matrizCasosTest, rutaAccesoFichero)
+    -Volcar los datos en memoria a un fichero-> crearFicheroCasosTest(ficheroVolcadoCasosTest, matrizCasosTest)
+    -Mostrar datos del stock por pantalla->mostrarCasosTest(matrizCasosTest)
+
+
+Notas:
+
+Tiene un modulo auxiliar para transformar los datos de 'matrizCasosTest'
+El log de errores se almacena en 'Empresa1_error_log.log'
+
+"""
+
 import logging
 import os
 import time

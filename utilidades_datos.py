@@ -2,6 +2,23 @@ import ast
 import logging
 import time
 
+"""
+Módulo auxiliar para transformar los datos de 'matrizCasosTest' del módulo empresa1
+Este módulo pertenece a la capa de acceso a datos del programa gestionador
+de stock de la tienda de Ollivander.
+
+
+Funciones:
+    -Convertir strings a otro tipo de dato-> convertirStringADatos(matrizCasosTest)
+    -Convertir cualquier tipo de dato a string-> convertirDatosAString(matrizCasosTest)
+    
+
+
+Notas:
+ 
+El log de errores se almacena en 'Empresa1_error_log.log'
+
+"""
 
 def convertirStringADatos(matrizCasosTest):
     """ Toma datos en formato str y los transforma al tipo de datos que se evalua
